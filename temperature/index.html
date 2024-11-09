@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Temperature Converter</h1>
+            <button id="settings-btn">Settings</button>
+        </header>
+        <main>
+            <section class="converter">
+                <h2>Converter</h2>
+                <input type="number" id="temperature" placeholder="Enter temperature">
+                <select id="unitFrom">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                    <option value="Rankine">Rankine</option>
+                    <option value="Réaumur">Réaumur</option>
+                </select>
+                <span>to</span>
+                <select id="unitTo">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                    <option value="Rankine">Rankine</option>
+                    <option value="Réaumur">Réaumur</option>
+                </select>
+                <button onclick="convertTemperature()">Convert</button>
+                <h2 id="result"></h2>
+                <img src="C:\Users\lenovo\Desktop\html project\temperature\thermometer.jpg" alt="thermometer" class="thermometer">
+            </section>
+            <section class="history">
+                <h2>Conversion History</h2>
+                <ul id="history-list"></ul>
+                <img src="clock.png" alt="Clock" class="clock">
+            </section>
+        </main>
+        <aside class="settings-panel">
+            <h2>Settings</h2>
+            <label>
+                <input type="checkbox" id="decimal-places">
+                Show decimal places
+            </label>
+            <label>
+                <input type="checkbox" id="history-enabled">
+                Enable conversion history
+            </label>
+            <button id="clear-history">Clear History</button>
+            <img src="gear.png" alt="Gear" class="gear">
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

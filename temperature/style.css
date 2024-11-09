@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 800px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #333;
+}
+
+header button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: #45a049;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.converter {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.converter h2 {
+    margin-top: 0;
+}
+
+.converter input, .converter select, .converter button {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.converter button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.converter button:hover {
+    background-color: #45a049;
+}
+
+.thermometer {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.history {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.history h2 {
+    margin-top: 0;
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.history li:last-child {
+    border-bottom: none;
+}
+
+.history img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.settings-panel {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 200px;
+}
+
+.settings-panel h2 {
+    margin-top: 0;
+}
+
+.settings-panel label {
+    display: block;
+    margin: 10px 0;
+}
+
+.settings-panel button {
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.settings-panel button:hover {
+    background-color: #e53935;
+}
+
+.settings-panel img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.thermometer:hover,
+.clock:hover,
+.gear:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
